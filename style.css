@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* céu quente = background: linear-gradient(#fc0000, #ff6600, #fbff00, #d7f5f5);
+céu azul = background: linear-gradient(#1997ff, #35b5ff, #7dcfff, #d7f5f5); */
+body {
+    background: linear-gradient(#fc0000,#fbff00, #fd1919, #f9fd0b );
+}
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 10px solid #443801;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#fc0000, #ff6600, #fbff00, #d7f5f5);
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms infinite ease-out;
+}
+
+.sun {
+    position: absolute;
+    width: 450px;
+    animation: sun-animation 20s infinite linear;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+
+}
+
+@keyframes sun-animation {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+    
+}
