@@ -144,7 +144,7 @@ const loop = setInterval(() => {
         clearInterval(loop);
         
     }
-    if (turtlePosition <= 120 && turtlePosition > 0 && marioPosition < 120) {
+    if (turtlePosition <= 120 && turtlePosition > 0 && marioPosition < 100) {
 
         sun.style.animation = 'none';
         sun.style.left = `${sunPosition}px`;

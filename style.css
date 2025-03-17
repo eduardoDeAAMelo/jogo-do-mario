@@ -57,7 +57,7 @@ body {
 .turtle {
     position: absolute;
     bottom: 0;
-    width: 140px;
+    width: 90px;
     animation: turtle-animation 3s infinite linear;
 }
 
